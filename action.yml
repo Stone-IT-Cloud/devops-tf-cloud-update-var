@@ -31,8 +31,6 @@ runs:
     - uses: actions/setup-node@v4
       with:
         node-version: "22.x"
-        # cache: "npm"
-        # cache-dependency-path: ${{ github.action_path }}/package-lock.json
 
     - name: Install dependencies
       run: npm ci
