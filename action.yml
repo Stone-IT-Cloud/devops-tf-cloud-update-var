@@ -30,5 +30,5 @@ runs:
   main: 'index.js'
 
 branding:
-  icon: 'play'  
+  icon: 'play'
   color: 'green'

@@ -40,10 +40,10 @@ It borrows heavily from the work done by https://github.com/sarathkrish/invoke-t
 ## Example usage
 
 ```
-uses: patrontech/devops-tf-cloud-update@v1.0   
-with:  
-  workSpaceName: MyTestWorkspace  
-  organizationName: {{env.organization}}  
+uses: patrontech/devops-tf-cloud-update@v1.0
+with:
+  workSpaceName: MyTestWorkspace
+  organizationName: {{env.organization}}
   terraformToken: {{secrets.Terraform_Token}}
   terraformHost: 'app.terraform.io'
   variableName: 'container_tag'
