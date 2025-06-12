@@ -80,7 +80,7 @@ async function main() {
             },
             (error) => {
                 console.error('Update Variable Error:' + JSON.stringify(error.response.data));
-                core.setFailed(error.message);
+                core.setFailed(JSON.stringify(error.response.data));
             }
         );
     } catch (error) {

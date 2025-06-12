@@ -1,0 +1,26 @@
+name: Test Action
+
+on:
+  workflow_dispatch:
+
+jobs:
+  test-action:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Test Update Terraform Cloud Variable
+        uses: ./
+        with:
+          workSpaceName: ${{ secrets.TEST_WORKSPACE_NAME }}
+          organizationName: ${{ secrets.TEST_ORGANIZATION_NAME }}
+          terraformToken: ${{ secrets.TERRAFORM_TOKEN }}
+          terraformHost: app.terraform.io
+          variableName: test_variable
+          variableValue: test_value_${{ github.run_id }}
+        id: update-variable
+
+      - name: Verify output
+        if: steps.update-variable.outputs.variableId != ''
+        run: |
+          echo "Successfully updated variable with ID: ${{ steps.update-variable.outputs.variableId }}"
