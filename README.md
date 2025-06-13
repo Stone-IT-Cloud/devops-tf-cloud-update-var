@@ -1,7 +1,7 @@
 # Update Terraform Cloud Variable
 
-[![GitHub release](https://img.shields.io/github/v/release/Stone-IT-Cloud/devops-tf-cloud-update?style=flat-square)](https://github.com/Stone-IT-Cloud/devops-tf-cloud-update/releases)
-[![CI](https://github.com/Stone-IT-Cloud/devops-tf-cloud-update/actions/workflows/ci.yml/badge.svg)](https://github.com/Stone-IT-Cloud/devops-tf-cloud-update/actions)
+[![GitHub release](https://img.shields.io/github/v/release/Stone-IT-Cloud/devops-tf-cloud-update-var?style=flat-square)](https://github.com/Stone-IT-Cloud/devops-tf-cloud-update/releases)
+
 
 A GitHub Action to update a variable in [Terraform Cloud](https://www.terraform.io/docs/cloud/api/variables.html) workspaces via the Terraform Cloud API.
 
